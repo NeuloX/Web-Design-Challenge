@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myquery.js"></script>
+	
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/myown.css">
+	
+    <title>Wind Speed</title>
+  </head>
+  
+  <body>
+	<nav class="navbar navbar-inverse navbar-fixed-top ">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                     
+			  </button>
+
+			  <a class="navbar-brand active" href="index.html">MooPoint</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="maxtemp.html">Max Temperature</a></li>
+						<li><a href="humidity.html">Humidity</a></li>
+						<li><a href="cloud.html">Cloudiness</a></li>
+						<li><a href="wind.html">Wind Speed</a></li>
+					</ul>
+				  </li>
+				<li><a href="comparison.html"> Comparison</a></li>
+				<li><a href="data.html"> Data</a></li>
+			  </ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+		  	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7" id="cor_contents">
+				<h1>Wind Speed</h1>
+				<hr>
+				<p>
+					<img src="Resources\assets\images\Fig4.png" id="visual_pic"/>
+					<br>
+					The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+					To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble the dataset on over 500 cities.
+					<br>
+			
+					After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. 
+					Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
+					This site provides the source data tand visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations withessed.
+					
+					
+					</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-1" id="cor_space">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" id="cor_contents">
+				<div class="container-fluid" id="vis">
+					<h1>Visualizations</h1>
+					<hr>
+					<center>
+						<div class="hover_me">
+							<a href="maxtemp.html"><img src="Resources\assets\images\Fig1.png" id="vis_img"/></a>
+						</div>
+						<div class="hover_me">
+							<a href="humidity.html"><img src="Resources\assets\images\Fig2.png" id="vis_img"/></a>
+						</div>
+						<div class="hover_me">
+							<a href="cloud.html"><img src="Resources\assets\images\Fig3.png" id="vis_img"/></a>
+						</div>
+						<div class="hover_me">
+							<a href="wind.html"><img src="Resources\assets\images\Fig4.png" id="active"/></a>
+						</div>
+					</center>
+				</div>
+			</div>
+		<br>
+		
+
+	  </div>
+	</div>
+	
+
+  </body>
+</html>

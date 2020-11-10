@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myquery.js"></script>
+	
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/myown.css">
+	
+    <title>Data</title>
+  </head>
+  
+  <body>
+	<nav class="navbar navbar-inverse navbar-fixed-top ">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                     
+			  </button>
+
+			  <a class="navbar-brand active" href="index.html">MooPoint</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					  <li><a href="maxtemp.html">Max Temperature</a></li>
+					  <li><a href="humidity.html">Humidity</a></li>
+					  <li><a href="cloud.html">Cloudiness</a></li>
+					  <li><a href="wind.html">Wind Speed</a></li>
+					</ul>
+				  </li>
+				<li><a href="comparison.html"> Comparison</a></li>
+				<li><a href="data.html"> Data</a></li>
+			  </ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-1">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" id="cor_contents">
+				<div class="container-fluid" id="vis">
+					<h1>Data</h1>
+					<p>
+						The following table includes all of the data used for plotting during this project.
+					</p>
+					<hr>
+					<center>
+							<iframe frameBorder="0" src="data_table.html" id="data_table"  allowtransparency="true">
+							</iframe>
+					</center>
+				</div>
+			</div>
+			<div class="col-lg-1">
+			</div>
+		<br>
+	  </div>
+	</div>
+	
+
+  </body>
+</html>
